@@ -345,14 +345,14 @@
     <link name="link_eef">
     <visual>
       <geometry>
-        <mesh filename="package://xarm_description/meshes/camera/realsense/visual/d435_with_cam_stand.stl"/>
+        <mesh filename="meshes/visual/d435_with_cam_stand.stl"/>
       </geometry>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <material name="Silver"/>
     </visual>
     <collision>
       <geometry>
-        <mesh filename="package://xarm_description/meshes/camera/realsense/collision/d435_with_cam_stand.stl"/>
+        <mesh filename="meshes/collision/d435_with_cam_stand.stl"/>
       </geometry>
       <origin rpy="0 0 0" xyz="0 0 0"/>
     </collision>
@@ -437,14 +437,14 @@
     </inertial>
     <visual>
       <geometry>
-        <mesh filename="package://xarm_description/meshes/gripper/lite/visual/gripper_lite.stl"/>
+        <mesh filename="meshes/visual/gripper_lite.stl"/>
       </geometry>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <material name="White"/>
     </visual>
     <collision>
       <geometry>
-        <mesh filename="package://xarm_description/meshes/gripper/lite/collision/gripper_lite.stl"/>
+        <mesh filename="meshes/collision/gripper_lite.stl"/>
       </geometry>
       <origin rpy="0 0 0" xyz="0 0 0"/>
     </collision>
