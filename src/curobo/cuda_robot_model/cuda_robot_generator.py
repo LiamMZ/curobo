@@ -747,9 +747,10 @@ class CudaRobotGenerator(CudaRobotGeneratorConfig):
         link_sphere_idx_map = []
         cpu_tensor_args = self.tensor_args.cpu()
         self_collision_buffer = self.self_collision_buffer.copy()
+        # if type(collision_spheres) is list:
+        #     collision_spheres = collision_spheres[0]
         with profiler.record_function("robot_generator/build_collision_spheres"):
             for j_idx, j in enumerate(collision_link_names):
-                # print(j_idx)
                 n_spheres = len(collision_spheres[j])
                 link_spheres = torch.zeros(
                     (n_spheres, 4), dtype=cpu_tensor_args.dtype, device=cpu_tensor_args.device
