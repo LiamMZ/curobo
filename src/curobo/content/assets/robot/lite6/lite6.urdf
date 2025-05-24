@@ -342,7 +342,21 @@
       <dynamics damping="0.1" friction="0.1"/>
     </joint>
 
-    <link name="link_eef"/>
+    <link name="link_eef">
+    <visual>
+      <geometry>
+        <mesh filename="package://xarm_description/meshes/camera/realsense/visual/d435_with_cam_stand.stl"/>
+      </geometry>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <material name="Silver"/>
+    </visual>
+    <collision>
+      <geometry>
+        <mesh filename="package://xarm_description/meshes/camera/realsense/collision/d435_with_cam_stand.stl"/>
+      </geometry>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+    </collision>
+  </link>
 
     <joint
       name="joint_eef"
